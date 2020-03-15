@@ -5,6 +5,7 @@ class Effects {
     text;
     typingSpeed = 150;
     blinkingSpeed = 500;
+    audioTyping = new Audio("audio/keyboard-click.mp3");
 
     constructor() {
         this.text = "easy";
@@ -18,6 +19,7 @@ class Effects {
     }
 
     typingWord = () => {
+        this.audioTyping.play();
         if (this.x < this.text.length) {
             this.word[0].innerHTML += this.text.charAt(this.x);
             this.x++;

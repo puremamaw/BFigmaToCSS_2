@@ -47,7 +47,7 @@ body {
 #logo {
     font-family: Raleway;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: #eb6023;
@@ -322,7 +322,6 @@ body {
 }
 
 #search-box button:hover {
-    /* wont work i don't know why */
     cursor: pointer;
 }
 
@@ -368,14 +367,14 @@ body {
 
 #button-container {
     width: 100%;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 #button-container button {
     height: 53.71px;
     background: transparent;
     margin-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 #button-container button span {
@@ -400,17 +399,17 @@ body {
 }
 
 #jamp-form {
-    width: 249px;
+    min-width: 36%;
     margin-right: 3.24px;
 }
 
 #buy-airtime {
-    width: 203px;
+    min-width: 29%;
     margin-right: 3.29px;
 }
 
 #buy-electricity {
-    width: 223px
+    min-width: 32%;
 }
 
 .orange-button:hover {
@@ -428,7 +427,7 @@ body {
 }
 
 .row-1 {
-    width: 311.41px;
+    min-width: 45%;
 }
 
 .row-1 span {
@@ -444,11 +443,11 @@ body {
 }
 
 #pay-invoice {
-    width: 227px;
+    min-width: 32.5%;
 }
 
 #resend-reciept {
-    width: 327px;
+    min-width: 47%;
 }
 
 .row-2 span {
@@ -460,11 +459,11 @@ body {
 }
 
 #nhf-schedule {
-    width: 306px;
+    min-width: 44.1%;
 }
 
 #pay-family-friends {
-    width: 350px;
+    min-width: 50.4%;
 }
 
 .row-4 span {
@@ -472,11 +471,11 @@ body {
 }
 
 #pay-salaries {
-    width: 234px;
+    min-width: 33.7%;
 }
 
 #pay-taxes {
-    width: 217px;
+    min-width: 31.3%;
 }
 
 #right-section {
@@ -493,6 +492,7 @@ body {
     flex-direction: column;
     width: 358.8px;
     height: 711.7px;
+    position: relative;
 }
 
 .orange-rows {
@@ -503,7 +503,52 @@ body {
     margin-left: calc(50% - 334px / 2);
     border: 0px;
     display: flex;
-    height: 276.57px;
+    height: 255.57px;
+    position: absolute;
+}
+
+#options-container>div:last-child {
+    margin-top: calc(234px * 2)
+}
+
+.orange-rows:hover {
+    background: white;
+    width: 102%;
+    margin-left: -20px;
+    padding-left: 32px;
+    z-index: 2;
+    box-shadow: 0px 8px 42px rgba(133, 133, 133, 0.1), 0px 18px 26px rgba(119, 119, 119, 0.1), 0px 5px 10px rgba(161, 161, 161, 0.12);
+}
+
+#middle-box:hover {
+    background: #f16521;
+    width: 104%;
+    margin-left: -18px;
+    padding-left: 18px;
+}
+
+.orange-rows:hover div img {
+    filter: brightness(0%);
+}
+
+.orange-rows:hover div:last-child {
+    border-left: 0.6px solid #ED6E2D !important;
+}
+
+.orange-rows:hover .balance-text {
+    color: #ED6E2D;
+}
+
+#middle-box:hover div img {
+    filter: brightness(0%);
+}
+
+#middle-box:hover #message-balance-2 {
+    border-left: 0.6px solid white !important;
+}
+
+#middle-box:hover div:last-child .balance-text {
+    color: white;
 }
 
 #recieve-money-icon {
@@ -540,7 +585,9 @@ body {
     border-radius: 9.6px;
     align-items: center;
     display: flex;
-    height: 277.56px;
+    height: 253.56px;
+    margin-top: 234px;
+    z-index: 1;
 }
 
 #computer-cash-icon {
@@ -584,9 +631,9 @@ body {
 }
 
 #view-more-hyperlink:hover {
-    color: #D95129;
+    color: black;
     text-decoration: none;
-    border-bottom: 1.2px solid #D95129;
+    border-bottom: 1.2px solid black;
 }
 
 #calculator-icon {
