@@ -15,7 +15,9 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: white;
 }
 
 #main-container header {
@@ -365,19 +367,16 @@ body {
     margin-left: 10.8px;
 }
 
-#button-container {
+#quicklink-container {
     width: 100%;
 }
 
-#button-container button {
+.quicklinks {
     height: 53.71px;
     background: transparent;
     margin-bottom: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-}
-
-#button-container button span {
+    padding: 10px 46px;
+    float: left;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -386,100 +385,26 @@ body {
     text-align: center;
     letter-spacing: -0.350877px;
     color: #3B3B3B;
-}
-
-.orange-button {
-    border: 2px solid #F16521;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-
-.orange-button span {
-    color: #F16521 !important;
-}
-
-#jamp-form {
-    min-width: 36%;
-    margin-right: 3.24px;
-}
-
-#buy-airtime {
-    min-width: 29%;
-    margin-right: 3.29px;
-}
-
-#buy-electricity {
-    min-width: 32%;
-}
-
-.orange-button:hover {
-    background-color: #F16521 !important;
-}
-
-.orange-button:hover span {
-    color: white !important;
-}
-
-.fade-row {
-    border: 1.92px solid #E4E4E4;
+    border: 1.92px solid #3B3B3B;
     box-sizing: border-box;
     border-radius: 7.68px;
+    margin-right: 7px;
 }
 
-.row-1 {
-    min-width: 45%;
+.orange-quicklinks {
+    border: 2px solid #F16521;
+    border-radius: 8px;
+    color: #F16521;
 }
 
-.row-1 span {
-    opacity: 0.7;
-}
-
-.not-orange-button:hover {
-    border: 1.92px solid black;
-}
-
-.not-orange-button:hover span {
-    opacity: 1;
-}
-
-#pay-invoice {
-    min-width: 32.5%;
-}
-
-#resend-reciept {
-    min-width: 47%;
-}
-
-.row-2 span {
-    opacity: 0.5;
-}
-
-.row-3 span {
-    opacity: 0.3;
-}
-
-#nhf-schedule {
-    min-width: 44.1%;
-}
-
-#pay-family-friends {
-    min-width: 50.4%;
-}
-
-.row-4 span {
-    opacity: 0.2;
-}
-
-#pay-salaries {
-    min-width: 33.7%;
-}
-
-#pay-taxes {
-    min-width: 31.3%;
+.orange-quicklinks:hover {
+    color: white;
+    background: #F16521;
 }
 
 #right-section {
     position: relative;
+    background: linear-gradient(55.22deg, #D95129 -0.02%, #F16521 88.91%);
 }
 
 #right-section-fix-container {
@@ -521,7 +446,6 @@ body {
 }
 
 #middle-box:hover {
-    background: #f16521;
     width: 104%;
     margin-left: -18px;
     padding-left: 18px;
@@ -537,18 +461,6 @@ body {
 
 .orange-rows:hover .balance-text {
     color: #ED6E2D;
-}
-
-#middle-box:hover div img {
-    filter: brightness(0%);
-}
-
-#middle-box:hover #message-balance-2 {
-    border-left: 0.6px solid white !important;
-}
-
-#middle-box:hover div:last-child .balance-text {
-    color: white;
 }
 
 #recieve-money-icon {
@@ -631,9 +543,9 @@ body {
 }
 
 #view-more-hyperlink:hover {
-    color: black;
+    color: #F16521;
     text-decoration: none;
-    border-bottom: 1.2px solid black;
+    border-bottom: 1.2px solid #F16521;
 }
 
 #calculator-icon {
@@ -650,25 +562,7 @@ body {
     padding-left: 15.12px;
 }
 
-#right-box-2 {
-    position: absolute;
-    background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
-    mix-blend-mode: screen;
-    opacity: 0.2;
-    border-radius: 7.2px;
-    width: 100.58px;
-    height: 100.58px;
-    left: 16vh;
-    top: 16vh;
-    transform: rotate(26deg);
-}
-
 #right-box-1 {
-    position: absolute;
-    background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
-    mix-blend-mode: screen;
-    opacity: 0.2;
-    border-radius: 7.2px;
     width: 129.85px;
     height: 129.85px;
     transform: rotate(26deg);
@@ -676,66 +570,24 @@ body {
     top: 10vh;
 }
 
+#right-box-2 {
+    width: 100.58px;
+    height: 100.58px;
+    left: 16vh;
+    top: 16vh;
+    transform: rotate(26deg);
+}
+
 #right-box-3 {
-    position: absolute;
     width: 210px;
     height: 210px;
-    background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
-    mix-blend-mode: screen;
-    opacity: 0.2;
-    border-radius: 7.2px;
-    transform: rotate(30deg);
     right: 0vw;
     top: 12vh;
-}
-
-#oval-hole {
-    position: absolute;
-    left: 9.5vw;
-    top: 43vh;
-    color: #ED7936;
-    width: 129.6px;
-    height: 129.6px;
-    mix-blend-mode: screen;
-    opacity: 0.11;
-    border: 36px solid #ED7936;
-    box-sizing: border-box;
-}
-
-.circle {
-    border-radius: 50%;
-}
-
-#oval-1 {
-    background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
-    mix-blend-mode: screen;
-    opacity: 0.2;
-    width: 93.6px;
-    height: 93.6px;
-    bottom: 23vh;
-    position: absolute;
-}
-
-#oval-2 {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
-    mix-blend-mode: screen;
-    opacity: 0.2;
-    right: 5vw;
-    bottom: 30vh;
 }
 
 #bottom-box-1 {
     width: 210px;
     height: 210px;
-    background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
-    mix-blend-mode: screen;
-    opacity: 0.2;
-    border-radius: 7.2px;
-    transform: rotate(30deg);
-    position: absolute;
     bottom: -9vh;
     left: 1vw;
 }
@@ -743,12 +595,6 @@ body {
 #bottom-box-2 {
     width: 138px;
     height: 138px;
-    position: absolute;
-    background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
-    mix-blend-mode: screen;
-    opacity: 0.2;
-    border-radius: 7.2px;
-    transform: rotate(30deg);
     bottom: -12vh;
     left: 5vw;
 }
@@ -756,25 +602,223 @@ body {
 #bottom-box-3 {
     width: 270px;
     height: 270px;
-    position: absolute;
-    background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
-    mix-blend-mode: screen;
-    opacity: 0.2;
-    border-radius: 7.2px;
-    transform: rotate(30deg);
     bottom: -22.5vh;
     right: 5.5vw;
 }
 
 #bottom-box-4 {
-    position: absolute;
     width: 210px;
     height: 210px;
+    bottom: -3vh;
+    right: -1vw;
+}
+
+.boxes {
     background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
     mix-blend-mode: screen;
     opacity: 0.2;
     border-radius: 7.2px;
-    transform: rotate(30deg);
-    bottom: -3vh;
-    right: -1vw;
+    transform: rotate(35deg);
+    position: absolute;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    mix-blend-mode: screen;
+}
+
+#oval-1 {
+    background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
+    opacity: 0.2;
+    width: 93.6px;
+    height: 93.6px;
+    bottom: 23vh;
+}
+
+#oval-2 {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(36.15deg, #D95129 -27.59%, #F16521 127.78%);
+    opacity: 0.2;
+    right: 5vw;
+    bottom: 30vh;
+}
+
+#oval-hole {
+    left: 9.5vw;
+    top: 43vh;
+    color: #ED7936;
+    width: 129.6px;
+    height: 129.6px;
+    opacity: 0.11;
+    border: 36px solid #ED7936;
+    box-sizing: border-box;
+}
+
+#mobile-menu {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 2;
+}
+
+#mobile-menu ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align: right;
+}
+
+#mobile-menu ul li {
+    display: none;
+}
+
+#mobile-menu ul li:first-child {
+    display: block;
+    cursor: pointer;
+    color: black;
+}
+
+#mobile-menu ul:hover li {
+    display: block;
+}
+
+#cog-icon-mobile {
+    color: #eb6023;
+}
+
+#mobile-menu ul a {
+    text-decoration: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.4px;
+    line-height: 17px;
+    letter-spacing: 0.312px;
+    color: #eb6023;
+}
+
+#mobile-menu ul a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+#mobile-menu ul li:not(:nth-child(1)) .fas {
+    color: #eb6023;
+}
+
+.fas.fa-briefcase {
+    margin-right: 6px;
+}
+
+.fas.fa-cog {
+    margin-right: -2px;
+}
+
+#mobile-menu ul li {
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width: 1264px) {
+    #search-box button {
+        z-index: 0;
+        width: 10% !important;
+    }
+    #left-section-fix-container #search-box {
+        padding-right: 0px;
+    }
+    #left-section-fix-container {
+        padding-right: 0px;
+    }
+    /* hamburger menu start*/
+    #mobile-menu {
+        display: block;
+    }
+    #left-menu {
+        display: none;
+    }
+    #right-menu {
+        display: none;
+    }
+    #main-container #left-header {
+        position: relative;
+        width: 37%;
+    }
+    /* hamburger menu end*/
+    #search-box {
+        width: calc(100%);
+    }
+    #because-payments-container {
+        width: auto !important;
+        height: auto !important;
+        margin-top: 9vh;
+    }
+    #input-bill-payments::placeholder {
+        font-size: 75%;
+    }
+    #left-section-fix-container {
+        margin-left: 26%;
+    }
+    #main-container #left-header {
+        padding-left: 13%;
+    }
+    #left-section {
+        width: 100% !important;
+        position: relative;
+    }
+    #left-section-fix-container {
+        margin-left: 13%;
+        height: auto;
+    }
+    #main-container {
+        display: block;
+        overflow-y: scroll;
+    }
+    #login-signup-container button {
+        border: 1px solid #F16521;
+        width: 88px;
+    }
+    #login-signup-container button i {
+        color: #F16521;
+    }
+    #login-signup-container button span {
+        color: #F16521;
+    }
+    #main-container header {
+        position: static;
+    }
+    #main-container #right-header {
+        padding-right: 10px;
+    }
+    #right-header-fix-container {
+        width: 100%;
+    }
+    #login-signup-container {
+        margin: auto;
+    }
+    .quicklinks {
+        padding: 10px 10px;
+    }
+    #right-section {
+        width: 100% !important;
+        margin-top: auto;
+        overflow: hidden;
+    }
+    #right-section-fix-container {
+        margin-top: 0px;
+    }
+    #login-signup-container button:first-child {
+        margin-right: 6px;
+    }
+    #options-container {
+        padding: 81px 0px;
+    }
+    #box-1 {
+        left: -77.5px;
+    }
+    #quicklink-container {
+        padding-bottom: 25px;
+    }
 }
