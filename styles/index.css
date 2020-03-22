@@ -367,10 +367,6 @@ body {
     margin-left: 10.8px;
 }
 
-#quicklink-container {
-    width: 100%;
-}
-
 .quicklinks {
     height: 53.71px;
     background: transparent;
@@ -416,7 +412,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 358.8px;
-    height: 711.7px;
+    height: 726.7px;
     position: relative;
 }
 
@@ -718,10 +714,16 @@ body {
 }
 
 #mobile-menu ul li {
-    margin-bottom: 2px;
+    margin-bottom: 5px;
 }
 
-@media screen and (max-width: 1264px) {
+@media screen and (max-width: 885px) {
+    #input-bill-payments::placeholder {
+        font-size: 2.5vw !important;
+    }
+}
+
+@media screen and (max-width: 1430px) {
     #search-box button {
         z-index: 0;
         width: 10% !important;
@@ -754,9 +756,13 @@ body {
         width: auto !important;
         height: auto !important;
         margin-top: 9vh;
+        padding-right: 4vw;
+    }
+    #input-bill-payments {
+        font-size: 2.5vw;
     }
     #input-bill-payments::placeholder {
-        font-size: 75%;
+        font-size: 20px;
     }
     #left-section-fix-container {
         margin-left: 26%;
@@ -807,18 +813,29 @@ body {
         overflow: hidden;
     }
     #right-section-fix-container {
-        margin-top: 0px;
+        margin: 0px;
     }
     #login-signup-container button:first-child {
         margin-right: 6px;
     }
     #options-container {
-        padding: 81px 0px;
+        padding: 60px 0px;
+        margin: auto;
     }
     #box-1 {
         left: -77.5px;
     }
     #quicklink-container {
         padding-bottom: 25px;
+        padding-right: 20px;
+    }
+    #login-signup-container button:hover {
+        background-color: #F16521;
+    }
+    #login-signup-container button:hover i {
+        color: white;
+    }
+    #login-signup-container button:hover span {
+        color: white;
     }
 }
