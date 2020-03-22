@@ -721,6 +721,9 @@ body {
     #input-bill-payments::placeholder {
         font-size: 2.5vw !important;
     }
+    #input-bill-payments {
+        font-size: 2.5vw;
+    }
 }
 
 @media screen and (max-width: 1430px) {
@@ -757,9 +760,6 @@ body {
         height: auto !important;
         margin-top: 9vh;
         padding-right: 4vw;
-    }
-    #input-bill-payments {
-        font-size: 2.5vw;
     }
     #input-bill-payments::placeholder {
         font-size: 20px;
